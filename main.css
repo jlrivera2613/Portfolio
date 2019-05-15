@@ -118,6 +118,10 @@
       margin: .3rem;
     }
 
+    footer a {
+    	color: var(--color-grey-light);
+    }
+
     footer a:visited {
       color: var(--seafoam-color-primary);
     }
