@@ -18,6 +18,9 @@
    /*Pink*/
    --pink-color-primary: #FF8A65;
 
+   /*Text*/
+   --grey-color-dark: #424242;
+
 	}
 
 /* ==========================================================================
@@ -91,8 +94,12 @@
       font-size: var(--large-text);
     }
 
-    nav a:hover {
+    a:hover {
       font-weight: bold;
+    }
+
+    a:active {
+      border: dotted;
     }
 
     footer {
@@ -103,19 +110,15 @@
  
     footer p {
       color: lightgrey;
-      text-align: center;
       padding: 2rem;
+      text-align: center;
     }
 
     footer li {
       margin: .3rem;
     }
 
-    footer li a:hover {
-      color: var(--color-grey-primary);
-    }
-
-    footer li a:visited {
+    footer a:visited {
       color: var(--seafoam-color-primary);
     }
 
@@ -157,8 +160,8 @@
       @media (min-width: 900px) {
 
         .current-page {
-          border-left: none;
           border-bottom: 3px solid var(--pink-color-primary);
+          border-left: none;
         }
       }
 
@@ -174,8 +177,8 @@
         }
 
         .current-page {
-          border-left: 0;
           border-bottom: 3px solid var(--pink-color-primary);
+          border-left: 0;
         }
      }
 
@@ -258,8 +261,8 @@
 		font-size: 2.1rem;
 		font-weight: medium;
 		margin: 1rem 1rem;
-    max-width: 11ch;
-    text-align: left;
+	    max-width: 11ch;
+	    text-align: left;
 	}
 
 	.hero-example {
@@ -279,7 +282,7 @@
 
     @media (min-width: 900px) {
       .hero h1 {
-          font-size: 2.5rem;
+        font-size: 2.5rem;
       }
 
       .hero {
@@ -289,8 +292,8 @@
 
     @media (min-width: 1300px) {
       .hero h1 {
-          font-size: 2.8rem;
-          margin: 2rem 2rem;
+	    font-size: 2.8rem;
+	    margin: 2rem 2rem;
       }
 
       .hero {
@@ -304,14 +307,14 @@
 
 	.bio {
 		background-color: var(--pink-color-primary);
-    padding: 3rem 0;
+    	padding: 3rem 0;
 	}
 
 	.bio p {
 		color: var(--grey-color-dark);
 		font-size: 1.5rem;
 		padding: 2rem;
-    margin: auto;
+    	margin: auto;
 	}
 
 	.name {
@@ -321,9 +324,9 @@
 
 	.headshot {
 		border-radius: 50%;
-    display: block;
+   		display: block;
 		height: 11rem;
-    margin: auto;
+    	margin: auto;
 		width: 11rem;
 	}
 
@@ -379,16 +382,16 @@
    ========================================================================== */
 
    .callout {
-   		display: flex;
+   	  display: flex;
       flex-direction: column;
       font-style: bold;
       text-align: center;
     }
 
    .callout img {
-   		height: 20rem;
-      width: 30rem;
+   	  height: 20rem;
       margin: auto;
+      width: 30rem;
     }
 
     .callout-button {
@@ -420,8 +423,8 @@
 
       .callout-button {
         font-size: var(--xxxxlarge-text);
-        padding: 1.8rem 3rem;
         margin-bottom: 8rem;
+        padding: 1.8rem 3rem;
       }
     }
 
@@ -458,7 +461,7 @@
 
 	summary {
 		background-color: var(--seafoam-color-primary);
-    border-bottom: 3px solid var(--grey-color-light);
+        border-bottom: 3px solid var(--grey-color-light);
 		color: var(--grey-color-dark);
 		font-family: var(--font-primary);
 		font-size: var(--large-text);
@@ -540,7 +543,7 @@
 	input[type=submit] {
 		background-color: var(--pink-color-primary);
 		border: none;
-    border-radius: .2rem;
+        border-radius: .2rem;
 		color: white;
 		cursor: pointer;
 		font-family: var(--font-primary);
@@ -556,10 +559,10 @@
 	}
 
 	.content-wrapper h2 {
-    font-family: var(--font-secondary);
-    font-size: 2.5rem;
-    font-weight: normal;
-    text-align: center;
+	    font-family: var(--font-secondary);
+	    font-size: 2.5rem;
+	    font-weight: normal;
+	    text-align: center;
 	}
 
 	.content-wrapper {
@@ -596,10 +599,10 @@
    ========================================================================== */
 
     .resume {
-      flex-direction: row;
+      	flex-direction: row;
    		margin: auto;
    		max-width: 50rem;
-      padding-top: 2rem;
+      	padding-top: 2rem;
     }
 
     .resume p {
@@ -607,24 +610,24 @@
     }
 
     .resume h2 {
-     border-bottom: 4px dotted var(--pink-color-primary);
-     padding-bottom: .5rem;
+	    border-bottom: 4px dotted var(--pink-color-primary);
+	    padding-bottom: .5rem;
     }
 
     .resume-section h3 {
-      padding-top: .5rem;
+      	padding-top: .5rem;
     }
 
     .extracurriculars {
-   		display: grid;
-      grid-auto-columns: 1fr;
-   		justify-content: space-around;
-      padding: 1rem;
+		display: grid;
+	    grid-auto-columns: 1fr;
+		justify-content: space-around;
+	    padding: 1rem;
     }
 
     .extracurriculars img {
    		height: 5rem;
-      padding-right: 1rem;
+        padding-right: 1rem;
     }
 
     .extracurriculars p {
@@ -634,9 +637,9 @@
     }
 
     .hobbies {
-      align-items: center;
+    	align-items: center;
    		display: flex;
-      margin: 1rem;
+    	margin: 1rem;
     }
 
     .resume-section {
@@ -644,13 +647,13 @@
     }
 
     .skills-list {
-      font-family: var(--font-primary);
-      padding: .5rem;
+    	font-family: var(--font-primary);
+    	padding: .5rem;
     }
 
     .skills-list li {
-      display: block;
-      padding: 1rem 0;
+    	display: block;
+    	padding: 1rem 0;
     }
 
 /* ==========================================================================
@@ -723,17 +726,17 @@
           grid-template-columns: 1fr 1fr 1fr 1fr;
           grid-gap: 4rem;
           padding: 0;
-        }
+      }
 
       .skills-list li {
         display: inline;
         margin: .5rem;
-        }
+      }
 
       .skills-list li {
-        font-size: 1.5rem;
-        margin: 0 auto;
-        max-width: 10rem;
+      	font-size: 1.5rem;
+      	margin: 0 auto;
+      	max-width: 10rem;
       }
     }
 
@@ -742,16 +745,16 @@
    ========================================================================== */
 
     .card-grid { 
+    	margin: 1rem;
    		padding: 2rem;
-   		margin: 1rem;
     }
 
     .card-product {
-  		background-color: var(--grey-color-light); 
-  		border-radius: .2rem;
-      display: block;
-      margin-bottom: 2rem;
-      text-align: center;
+    	background-color: var(--grey-color-light); 
+    	border-radius: .2rem;
+    	display: block;
+    	margin-bottom: 2rem;
+    	text-align: center;
     }
 
     .card-product h3 {
@@ -759,13 +762,13 @@
     }
 
     .card-product p {
-      margin: auto;
+    	margin: auto;
     }
 
     .card-grid a {
-   		text-decoration: none;
    		color: var(--color-text-dark);
    		padding: 2.5rem 0;
+   		text-decoration: none;
     }
 
     .card-grid a:hover {
@@ -775,7 +778,7 @@
     .card-product img {
    		display: block;
    		margin: auto;
-      max-width: calc(100% - 5rem);
+        max-width: calc(100% - 5rem);
     }
 
 /* ==========================================================================
